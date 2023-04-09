@@ -88,8 +88,7 @@ Estoy definiendo la edad de Christian
     }
 
     var anho = 2025;
-    var saltolinea = "<br><br><br>"
-
+   
     document.write("Juan hoy tiene: " + (anho-2000) + " años");
     document.write(saltolinea);
 
@@ -98,4 +97,27 @@ Estoy definiendo la edad de Christian
     anho = 2030
     document.write(saltolinea);
     document.write("Carlos hoy tiene: " + (anho-2005) + " años");
+</script>
+
+<h1>Imprimir</h1>  
+<br>
+<script>
+    
+    function imprimir(frase) {
+
+        document.write(frase)
+        saltarLinea();
+    }
+
+    var anho = 2025;
+    imprimir("Hola amigos, estas son sus edades:");
+    
+    // Este codigo calcula las edades de Juan, Pedro y Carlos
+
+    imprimir("Juan hoy tiene: " + (anho-2000) + " años");
+    
+    imprimir("Pedro hoy tiene: " + (anho-1995) + " años");
+    
+    anho = 2030
+    imprimir("Carlos hoy tiene: " + (anho-2005) + " años");
 </script>
