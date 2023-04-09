@@ -28,8 +28,7 @@ Estoy definiendo la edad de Christian
 
     document.write("<br>");
     document.write("<br>");
-    document.write("<br>");
-    document.write("<br>");
+    
   
     anho = 2020
     document.write("Jimena tiene: " + (anho-2010) + " años");
@@ -52,9 +51,51 @@ Estoy definiendo la edad de Christian
     var nombre2 = "Paola";
     var nombre3 = "Laura";
 
-    promedio = (edadJimena+edadPaola+edadLaura15)/3
+    promedio = (edadJimena+edadPaola+edadLaura15)/3;
 
     document.write("El promedio de las edades de " + nombre1 + " , " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));
     document.write("<br>");
 
+</script>
+
+<h1>Saltolinea</h1>  
+
+<br>
+<script>
+    var anho = 2025;
+    var saltolinea = "<br><br><br>"
+
+    document.write("Juan tiene: " + (anho-2000) + " años");
+    document.write(saltolinea);
+
+    document.write("Pedro tiene: " + (anho-1995) + " años");
+    
+    anho = 2030
+    document.write(saltolinea);
+    document.write("Carlos tiene: " + (anho-2005) + " años");
+</script>
+
+<h1>Funciones</h1>  
+<br>
+<script>
+    
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    var anho = 2025;
+    var saltolinea = "<br><br><br>"
+
+    document.write("Juan hoy tiene: " + (anho-2000) + " años");
+    document.write(saltolinea);
+
+    document.write("Pedro hoy tiene: " + (anho-1995) + " años");
+    
+    anho = 2030
+    document.write(saltolinea);
+    document.write("Carlos hoy tiene: " + (anho-2005) + " años");
 </script>
