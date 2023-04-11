@@ -1,5 +1,5 @@
 <h1>JUEGO DE ADIVINANZA</h1>  
-<h1>Resultado</h1> 
+ 
 <br>
 <script>
 
@@ -17,19 +17,38 @@ function saltarLinea() {
     }
 
    var numeroPensado = Math.round(Math.random()*10);
-   var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+   var intentos = 3;
+   var contador = 1;
+   
+   while (contador <= intentos) {
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+    if (numeroPensado == numeroLanzado) {
+
+        alert("Usted acertó, en el intento " + intento + " el numero pensado era " + numeroPensado);
+        break;
+
+    }
+    else {
+        alert("usted erró");
+
+    }
+    contador++;
+
+   }
 
    if (numeroPensado == numeroLanzado){
 
-    imprimir("Usted Acertó")
+    imprimir("Usted acertó, en el intento " + intento + " El numero pensado era " + numeroLanzado);
 
    }
 
    else {
-
-    imprimir("Usted erró, el número pensado era " + numeroPensado)
+    imprimir("Usted erró, el numero pensado era " + numeroPensado);
 
    }
+
+   imprimir("fin");
+
 </script>
 
     
