@@ -25,4 +25,17 @@ function saltarLinea() {
     calcularImc(71,1.72,"Christian");
     calcularImc(75,1.73,"felipe");
     
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    function calcularImc(peso,altura) {
+        return (peso / (altura * altura));
+    }
+    
+    imprimir("El promedio del IMC calculado de Christian y Felipe es: " + (calcularImc(71,1.72)+calcularImc(75,1.73))/2);
+    imprimir("El promedio del IMC calculado de Gabriela y Luisa es: " + (calcularImc(65,1.68)+calcularImc(55,1.60))/2);
+
+    
+
 </script>
