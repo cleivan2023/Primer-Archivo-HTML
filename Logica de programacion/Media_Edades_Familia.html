@@ -1,4 +1,4 @@
-<h1>PROGRAMA TABLA DE MULTIPLICAR</h1>  
+<h1>PROGRAMA LA MEDIA DE MIEMBROS DE LA FAMILIA</h1>  
 
 <br>
 <script>
@@ -16,19 +16,21 @@ function saltarLinea() {
         saltarLinea();
     }
 
-    var multiplicador = 1
-    imprimir("WHILE");
+    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de mienbros de su familia"));
+    var contador = 1;
+    var totalEdades = 0;
 
-    while (multiplicador <= 10 ) {
-        imprimir(7 * multiplicador);
-    multiplicador++;
+    while (contador <= numeroMiembros) {
+
+        edad = parseInt(prompt("Ingrese la edad del familiar"));
+        totalEdades = totalEdades + edad;
+        contador++;
+
     }
 
-    imprimir("FOR");
+    mediaEdades = totalEdades/numeroMiembros;
 
-    for (var multiplicador = 1;multiplicador <= 10;multiplicador++) {
+    imprimir("La media de las edades de la familia es " + mediaEdades);
 
-        imprimir(7 * multiplicador);
-        
-    }
+    imprimir("fin")
    </script>
