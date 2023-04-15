@@ -1,4 +1,4 @@
-<h1>Programa calculo PUNTOS DE UN EQUIPO DE FUTBOL</h1>   
+<h1>PROGRAMA CALCULO:  PUNTOS DE UN EQUIPO DE FUTBOL</h1>   
 <br>
 <script>
 
@@ -15,11 +15,26 @@ function saltarLinea() {
         saltarLinea();
     }
 
-    var victorias = prompt("Informe la cantidad de victorias");
-    var empates = prompt("informe la cantidad de empates");
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("informe la cantidad de empates"));
 
     var puntosTotal = (victorias * 3) + empates;
 
     imprimir("El total de puentos del equipo es: " + puntosTotal);
 
+    if (puntosTotal > 28) {
+
+        imprimir("El equipo está mejor que el año pasado");
+    }
+
+    if (puntosTotal < 28) {
+
+        imprimir("El equipo está peor que el año pasado");
+    }
+
+    if (puntosTotal == 28) {
+
+        imprimir("El equipo está igual que el año pasado");
+    }
 </script>
+

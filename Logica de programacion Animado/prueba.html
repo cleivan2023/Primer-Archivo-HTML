@@ -2,29 +2,34 @@
 
 <script>
 	var pantalla = document.querySelector("canvas");
-	var pincel = pantalla.getContext("2d");
+	var pincel = pantalla.getContext("2d");		
+	pincel.fillStyle = "lightgrey";
+	pincel.fillRect(0,0,600,400); 
 
-	
-	pincel.fillStyle = "lightgrey";   //propiedad
-	pincel.fillRect(0,0,600,400); //función
-	
-	pincel.fillStyle = "green";   //propiedad
-	pincel.fillRect(0,0,200,400); //función
 
-	pincel.fillStyle = "red";   //propiedad
-	pincel.fillRect(400,0,200,400); //función
 
-	pincel.fillStyle = "yellow";   //propiedad
-	pincel.beginPath();
-	pincel.moveTo(300,200);
-	pincel.lineTo(200,400);
-	pincel.lineTo(400,400);
-	pincel.fill();
+	function disenharCircunferencia(x,y,radio){
+		pincel.fillStyle = "blue";
+		pincel.beginPath();
+		pincel.arc(x,y,radio,0,2*Math.PI);
+		pincel.fill();
+	}	
 
-	pincel.fillStyle = "blue";   //propiedad
-	pincel.beginPath();
-	pincel.arc(300,200,50,0,2*3.14);
-	pincel.fill();
+	function limpiarPantalla(){
 
+		pincel.clearRect(0,0,600,400);
+
+	}
+
+	var x = 0
+
+	function actualizarPantalla(){
+
+		limpiarPantalla();
+		disenharCircunferencia(x,20,10);
+		x++;
+	}
+
+	setInterval(actualizarPantalla,100);
 
 </script> 
