@@ -39,6 +39,15 @@
         text-align: center;
         width: 30%;
         vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border-color: #000000;
+        border-width: 2px;
+        border-style: solid;
+
+        //tambien se puede resumir las ultimas 3 lineas asi: border: 2px solid #00000;
+
     }
 
     .productos h2{
@@ -51,7 +60,7 @@
     }
 
     .producto-precio{
-        font-size: 23px;
+        font-size: 20px;
         font-weight: bold;
         margin-top: 10px;
     }
