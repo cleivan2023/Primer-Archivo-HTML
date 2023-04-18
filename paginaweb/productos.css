@@ -1,0 +1,57 @@
+    header{
+        background-color: #84ee86;
+        padding: 10px 0;
+    }
+
+    .caja{
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    nav{
+        position: absolute;
+        top: 250px;
+        right: 0;
+    }
+
+    nav li{
+        display: inline;
+        margin: 0 0 0 20px;
+    }
+
+    nav a{
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .productos{
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    .productos li{
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+    }
+
+    .productos h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .producto-descripcion{
+        font-size: 19px;
+    }
+
+    .producto-precio{
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
