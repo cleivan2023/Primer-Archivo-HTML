@@ -84,4 +84,11 @@
     footer{
         text-align: center;
         background: url(imagen/logofinal2.png);
+        padding: 40px;;
+    }
+
+    .Copyright{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin: 20px;
     }
